@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AJK College Admission Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="chatbot">
+
+        <!-- HEADER -->
+        <div class="chat-header">
+
+            <div class="college-icon">
+                🎓
+            </div>
+
+            <div>
+                <h1>AJK College</h1>
+                <p>Admission Assistant</p>
+            </div>
+
+            <div class="online-status">
+                <span></span> Online
+            </div>
+
+        </div>
+
+
+        <!-- CHAT AREA -->
+        <div class="chat-box" id="chatBox">
+
+            <div class="bot-message welcome-message">
+
+                <h3>👋 Welcome!</h3>
+
+                <p>
+                    I'm the AJK College Admission Assistant.
+                </p>
+
+                <p>
+                    I can help you with courses, eligibility,
+                    admission procedures, fees, hostel,
+                    transportation and required documents.
+                </p>
+
+                <p>
+                    <b>How can I help you today?</b>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUICK ACTIONS -->
+        <div class="quick-section">
+
+            <p>Quick Questions</p>
+
+            <div class="quick-buttons">
+
+                <button onclick="sendQuestion('What courses are available?')">
+                    📚 Courses
+                </button>
+
+                <button onclick="sendQuestion('How can I apply for admission?')">
+                    📝 Admission
+                </button>
+
+                <button onclick="sendQuestion('What is the eligibility?')">
+                    🎓 Eligibility
+                </button>
+
+                <button onclick="sendQuestion('What are the fees?')">
+                    💰 Fees
+                </button>
+
+                <button onclick="sendQuestion('What documents are required?')">
+                    📄 Documents
+                </button>
+
+                <button onclick="sendQuestion('Is hostel available?')">
+                    🏠 Hostel
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- INPUT -->
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Ask about admission..."
+                autocomplete="off"
+            >
+
+            <button onclick="sendMessage()">
+                ➤
+            </button>
+
+        </div>
+
+
+     <!-- ACTION BUTTONS -->
+
+<div class="action-buttons">
+
+    <a
+        href="https://ajkcas.ac.in/admission/"
+        target="_blank"
+        class="action-button apply-button"
+    >
+        📝 Apply Now
+    </a>
+
+    <a
+        href="https://ajkcas.ac.in/"
+        target="_blank"
+        class="action-button"
+    >
+        🌐 Official Website
+    </a>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<div class="chat-footer">
+    AJK College of Arts and Science • Admission Assistant
+</div>
+
+
+    <script src="college-data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
